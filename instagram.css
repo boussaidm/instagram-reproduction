@@ -1,0 +1,70 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*variables*/
+
+:root {
+    --navbar-bg: #fff;
+}
+
+
+/*body*/
+
+body {
+    background-color: #fafafa;
+}
+
+
+/*css de base*/
+
+.colone {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*navbar*/
+
+.navbar {
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--navbar-bg);
+    /*border-bottom: solid #646464 1px;*/
+    box-shadow: 0px 0px 2px 0px #646464;
+}
+
+.logo_instagram {
+    width: 100px;
+}
+
+.nav_choix {
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.recherche {
+    padding: 3px;
+}
+
+.icone_nav {
+    width: 25px;
+    margin-right: 13px;
+}
+
+.generale {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
