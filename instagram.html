@@ -10,24 +10,26 @@
 
 <body>
     <nav class="navbar row">
-        <img src="photos/Instagram-Logo.png" alt="logo_instagram" class="logo_instagram">
-        <div class="nav_choix row">
-            <form action="#">
-                <input type="text" placeholder="Recherche" class="recherche">
-            </form>
-            <div class="icones_liste row">
-                <img src="photos/home.png" alt="accueil" class="icone_nav">
-                <img src="photos/fleche.png" alt="fleche" class="icone_nav">
-                <img src="photos/ajouter.png" alt="ajouter" class="icone_nav">
-                <img src="photos/boussole.png" alt="boussole" class="icone_nav">
-                <img src="photos/like.png" alt="like" class="icone_nav">
-                <img src="photos/contact.png" alt="contact" class="icone_nav">
+        <div class="centre_nav row">
+            <img src="photos/Instagram-Logo.png" alt="logo_instagram" class="logo_instagram">
+            <div class="nav_choix row">
+                <form action="#">
+                    <input type="text" placeholder="Recherche" class="recherche">
+                </form>
+                <div class="icones_liste row">
+                    <img src="photos/home.png" alt="accueil" class="icone_nav">
+                    <img src="photos/fleche.png" alt="fleche" class="icone_nav">
+                    <img src="photos/ajouter.png" alt="ajouter" class="icone_nav">
+                    <img src="photos/boussole.png" alt="boussole" class="icone_nav">
+                    <img src="photos/like.png" alt="like" class="icone_nav">
+                    <img src="photos/contact.png" alt="contact" class="icone_nav">
+                </div>
             </div>
         </div>
     </nav>
     <div class="generale row">
         <section class="gauche colone">
-            <div class="les_story">
+            <div class="les_story row">
                 <div class="story">
                     <div class="profil_story"></div>
                     <p class="nom_story">Lorem um.</p>
@@ -42,9 +44,9 @@
                 </div>
             </div>
             <div class="publication">
-                <div class="entete_publication">
-                    <div class="profil_entete"></div>
-                    <div class="profil_publication">
+                <div class="entete_publication row">
+                    <div class="profil_publication row">
+                        <div class="profil_entete"></div>
                         <p class="nom_profil_publication">Lorem um</p>
                     </div>
                     <p class="etc">...</p>
@@ -52,7 +54,7 @@
                 <div class="photo_publication">
                     <img src="photos/identifie.png" alt="identification" class="identification">
                 </div>
-                <div class="reaction_publication">
+                <div class="reaction_publication row">
                     <div class="social_publication">
                         <img src="photos/like.png" alt="like" class="icone_publication">
                         <img src="photos/commentaire.png" alt="commentaire" class="icone_publication">
@@ -61,17 +63,22 @@
                     <img src="photos/ruban_marque.png" alt="enregistrer" class="icone_publication">
                 </div>
                 <div class="commentaire_publication">
-                    <span class="nbs_vues">40 000 vues</span><br>
-                    <span class="afiicher_commentaire">Afficher les commentaires</span><br>
+                    <div class="vue">
+                        <span class="nbs_vues">40 000 vues</span>
+                    </div>
                     <span class="commentaire">Lorem ipsum dolor sit amet consectetur.</span><br>
+                    <span class="aficher_commentaire">Afficher les commentaires ...</span><br>
                     <span class="commentaire">Lorem ipsum dolor sit amet consectetur.</span><br>
-                    <span class="commentaire">Lorem ipsum dolor sit amet consectetur.</span><br>
+                    <span class="commentaire">Il y a 2 heures</span><br>
                 </div>
-                <div class="action_comm">
-                    <img src="photos/smile.png" alt="smile" class="smile">
-                    <p class="ajout_commentaire">Ecrire un commentaire ...</p>
+                <div class="action_commentaire row">
+                    <div class="commentaire_gauche row">
+                        <img src="photos/smile.png" alt="smile" class="smile">
+                        <p class="ajout_commentaire">Ecrire un commentaire ...</p>
+                    </div>
                     <button class="publier">Publier</button>
-                </div>entaire
+                </div>
+                
             </div>
         </section>
         <section class="droite">
