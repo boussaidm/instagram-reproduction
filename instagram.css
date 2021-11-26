@@ -12,7 +12,7 @@
 :root {
     --navbar-bg: #fff;
     --insta-color: #a02c73;
-    --shadow : 0px 0px 2px 0px #646464;
+    --shadow: 0px 0px 2px 0px #646464;
 }
 
 
@@ -48,8 +48,8 @@ body {
 
 .centre_nav {
     align-items: center;
-    justify-content: space-around;
-    width: 66%;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .logo_instagram {
@@ -59,14 +59,15 @@ body {
 .nav_choix {
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
 }
 
 .recherche {
     padding: 3px;
+    margin-right: 112px;
 }
 
-.icones_liste{
+.icones_liste {
     margin-left: 10px;
 }
 
@@ -75,150 +76,188 @@ body {
     margin-right: 13px;
 }
 
-.generale {
+.test {
+    display: flex;
     width: 100%;
-    align-items: center;
     justify-content: center;
 }
 
-/*gauche*/
-.gauche{
-    width: 32%;
-    min-width: 500px;
+.generale {
+    width: 70%;
+    padding-bottom: 30px;
+    /*background-color: yellowgreen;*/
 }
 
-/*droite*/
 
-/* .droite{
-    background-color: violet;
-} */
+/*gauche*/
+
+.gauche {
+    width: 65%;
+}
+
+
 /*story*/
 
-.story{
-    align-items: center;
-    margin-right: 13px;
-    margin-top: 10px;
+.les_story {
+    margin-top: 30px;
+    background-color: var(--navbar-bg);
+    box-shadow: var(--shadow);
 }
 
-.les_story{
-    margin-left: 21px;
-    width: 93%;
+.story {
+    margin: 17px 0 13px 10px;
 }
 
-.profil_story{
-    width: 70px;
-   padding-bottom: 69px;
+.profil_story {
+    width: 75px;
+    padding-bottom: 70px;
     border-radius: 50%;
-    background-color: var(--insta-color) ;
-    margin-bottom: 5px;
+    background-color: var(--insta-color);
+    margin-right: 15px;
+    margin-bottom: 8px;
 }
+
 
 /*publication*/
 
-.publication{
-    margin-right: 19px;
-    margin-top: 31px;
+.publication {
+    margin-top: 32px;
     box-shadow: var(--shadow);
-    margin-bottom: 20px;
-    margin-left: 21px;
 }
+
 
 /*entete*/
 
-
-.entete_publication{
+.entete_publication {
     background-color: var(--navbar-bg);
-    align-items: center;
     justify-content: space-between;
-
-}
-
-.profil_publication{
     align-items: center;
 }
 
-.profil_entete{
-    border-radius: 50%;
-    width: 50px;
-    padding-bottom: 50px;
-    background-color: turquoise;
-    margin: 5px 7px 5px 12px;
+.profil_publication {
+    align-items: center;
 }
 
-.etc{
-    font-size: 25px;
-    margin-right: 10px;
+.profil_entete {
+    border-radius: 50%;
+    width: 40px;
+    padding-bottom: 40px;
+    background-color: var(--insta-color);
+    margin: 6px 5px 6px 6px;
 }
+
+.etc {
+    margin-right: 5px;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
 
 /*corps publication*/
 
-.photo_publication{
+.photo_publication {
+    padding-top: 510px;
     background-color: var(--insta-color);
-    width: 100%;
-    padding-top: 500px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
 }
 
-.identification{
-    width: 36px;
-    margin-bottom: 5px;
+.identification {
+    width: 20px;
 }
+
 
 /*footer publication*/
 
-.reaction_publication{
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+.commentaire_publication {
+    margin-left: 15px;
 }
 
-.icone_publication{
+.reaction_publication {
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: var(--navbar-bg);
+    margin-left: 15px;
+}
+
+.icone_publication {
     width: 30px;
-    margin-right: 7px;
-}
-
-.vue{
-    margin-top: 15px;
+    margin-right: 10px;
     margin-bottom: 15px;
 }
 
-.action_commentaire{
-    align-items: center;
+.vue {
+    margin-bottom: 8px;
+}
+
+.heure {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.heure span {
+    font-size: 12px;
+}
+
+.action_commentaire {
     justify-content: space-between;
-    margin-top: 23px;
-    margin-bottom: 15px;
+    padding-bottom: 8px;
+    box-shadow: var(--shadow);
 }
 
-.comentaire_gauche{
-    align-items: flex-end;
+.commentaire_gauche {
+    margin: 10px 0 8px 10px;
+    align-items: center;
 }
 
-.smile{
+.commentaire_gauche p {
+    font-size: 15px;
+}
+
+.smile {
     width: 25px;
-    margin-left: 5px;
     margin-right: 8px;
 }
 
-.ajout_commentaire{
-    margin-top: 5px;
-}
-
-.publier{
-    margin-right: 10px;
+.publier {
     border: none;
     background-color: transparent;
+    margin-right: 15px;
 }
+
+
+/*droite*/
+
+.droite {
+    width: 30%;
+    background-color: violet;
+    margin-left: 27px;
+    margin-top: 30px;
+}
+
 
 /*media*/
 
 @media screen and (max-width: 823px) {
-    .centre_nav{
+    .centre_nav {
         justify-content: space-between;
         width: 82%;
     }
-    .recherche{
+    .recherche {
+        display: none;
+    }
+    .generale {
+        width: 100%
+    }
+    .gauche {
+        width: 100%;
+        justify-content: center;
+    }
+    .les_story {
+        width: 99%;
+    }
+    .publication {
+        width: 100%;
+    }
+    .droite {
         display: none;
     }
 }
