@@ -13,6 +13,8 @@
     --navbar-bg: #fff;
     --insta-color: #a02c73;
     --shadow: 0px 0px 2px 0px #646464;
+    --font-pseudo: 'Open Sans', sans-serif;
+    --font-entete: 'Roboto', sans-serif;
 }
 
 
@@ -33,6 +35,12 @@ body {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.gris {
+    color: #a7a7a7;
+    font-family: var(--font-pseudo);
+    font-size: 15px;
 }
 
 
@@ -78,7 +86,6 @@ body {
 
 .test {
     display: flex;
-    width: 100%;
     justify-content: center;
 }
 
@@ -89,23 +96,18 @@ body {
 }
 
 
-/*gauche*/
-
-.gauche {
-    width: 65%;
-}
-
-
 /*story*/
 
 .les_story {
     margin-top: 30px;
     background-color: var(--navbar-bg);
     box-shadow: var(--shadow);
+    min-width: 484px;
 }
 
 .story {
-    margin: 17px 0 13px 10px;
+    margin: 17px 6px 13px 10px;
+    align-items: center;
 }
 
 .profil_story {
@@ -113,8 +115,11 @@ body {
     padding-bottom: 70px;
     border-radius: 50%;
     background-color: var(--insta-color);
-    margin-right: 15px;
-    margin-bottom: 8px;
+}
+
+.nom_story {
+    font-family: var(--font-pseudo);
+    font-size: 12px;
 }
 
 
@@ -144,10 +149,17 @@ body {
     padding-bottom: 40px;
     background-color: var(--insta-color);
     margin: 6px 5px 6px 6px;
+    font-family: var(--font-entete);
+}
+
+.nom_profil_publication {
+    font-family: var(--font-entete);
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .etc {
-    margin-right: 5px;
+    margin-right: 12px;
     font-size: 25px;
     margin-bottom: 9px;
 }
@@ -186,11 +198,23 @@ body {
 
 .vue {
     margin-bottom: 8px;
+    font-family: var(--font-entete);
+}
+
+.commentaire {
+    font-family: var(--font-pseudo);
+    font-size: 15px;
+}
+
+.pseudo_commentaire {
+    font-family: var(--font-entete);
+    font-weight: 600;
 }
 
 .heure {
     margin-top: 8px;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .heure span {
@@ -221,29 +245,83 @@ body {
     border: none;
     background-color: transparent;
     margin-right: 15px;
+    color: #2ca6b6a4;
 }
 
 
 /*droite*/
 
 .droite {
-    width: 30%;
-    background-color: violet;
-    margin-left: 27px;
+    width: 294px;
+    margin-left: 17px;
     margin-top: 30px;
+}
+
+.profil_compte {
+    align-items: center;
+    padding: 12px 0 17px 9px;
+}
+
+.photo_compte {
+    width: 70px;
+    padding-top: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: var(--insta-color);
+}
+
+.nom_compte {
+    font-family: var(--font-entete);
+}
+
+.presentation_suggestion {
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 20px 5px;
+}
+
+.voir_tout {
+    font-family: var(--font-entete);
+}
+
+.les_abonnements {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 18px 8px;
+}
+
+.gauche_abonnement {
+    align-items: center;
+}
+
+.photo_abonnement {
+    width: 50px;
+    padding-top: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: var(--insta-color);
+}
+
+.nom_abonnement {
+    font-family: var(--font-entete);
+    font-size: 15px;
+}
+
+.abonne {
+    text-decoration: none;
+    font-family: var(--font-entete);
+    font-size: 12px;
+}
+
+.a_propos {
+    padding-top: 20px;
+    font-size: 10px;
 }
 
 
 /*media*/
 
-@media screen and (max-width: 823px) {
-    .centre_nav {
-        justify-content: space-between;
-        width: 82%;
-    }
-    .recherche {
-        display: none;
-    }
+@media screen and (max-width: 563px) {
     .generale {
         width: 100%
     }
@@ -257,6 +335,19 @@ body {
     .publication {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 823px) {
+    .centre_nav {
+        justify-content: space-between;
+        width: 82%;
+    }
+    .recherche {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1108px) {
     .droite {
         display: none;
     }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="instagram.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Instagram</title>
 </head>
 
@@ -31,15 +33,15 @@
         <div class="generale row">
             <section class="gauche colone">
                 <div class="les_story row">
-                    <div class="story">
+                    <div class="story colone">
                         <div class="profil_story"></div>
                         <p class="nom_story">Lorem um.</p>
                     </div>
-                    <div class="story">
+                    <div class="story colone">
                         <div class="profil_story"></div>
                         <p class="nom_story">Lorem um</p>
                     </div>
-                    <div class="story">
+                    <div class="story colone">
                         <div class="profil_story"></div>
                         <p class="nom_story">Lorem um</p>
                     </div>
@@ -67,17 +69,56 @@
                         <div class="vue">
                             <span class="nbs_vues">40 000 vues</span>
                         </div>
-                        <span class="commentaire">Lorem ipsum dolor sit amet consectetur.</span><br>
-                        <span class="aficher_commentaire">Afficher les commentaires ...</span><br>
-                        <span class="commentaire">Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span class="commentaire"><span class="pseudo_commentaire">Lorem </span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span class="aficher_commentaire gris">Afficher les commentaires ...</span><br>
+                        <span class="commentaire"><span class="pseudo_commentaire">Lorem </span>Lorem ipsum dolor sit amet consectetur.</span><br>
                         <div class="heure">
-                            <span class="commentaire">Il y a 2 heures</span><br>
+                            <span class="commentaire gris">Il y a 2 heures</span><br>
                         </div>
                     </div>
                     <div class="action_commentaire row">
                         <div class="commentaire_gauche row">
                             <img src="photos/smile.png" alt="smile" class="smile">
-                            <p>Ecrire un commentaire ...</p>
+                            <p class="gris">Ecrire un commentaire ...</p>
+                        </div>
+                        <button class="publier">Publier</button>
+                    </div>
+
+                </div>
+                <div class="publication">
+                    <div class="entete_publication row">
+                        <div class="profil_publication row">
+                            <div class="profil_entete"></div>
+                            <p class="nom_profil_publication">Lorem um</p>
+                        </div>
+                        <p class="etc">...</p>
+                    </div>
+                    <div class="photo_publication">
+                        <img src="photos/identifie.png" alt="identification" class="identification">
+                    </div>
+                    <div class="reaction_publication row">
+                        <div class="social_publication">
+                            <img src="photos/like.png" alt="like" class="icone_publication">
+                            <img src="photos/commentaire.png" alt="commentaire" class="icone_publication">
+                            <img src="photos/fleche.png" alt="envoyer" class="icone_publication">
+                        </div>
+                        <img src="photos/ruban_marque.png" alt="enregistrer" class="icone_publication">
+                    </div>
+                    <div class="commentaire_publication">
+                        <div class="vue">
+                            <span class="nbs_vues">40 000 vues</span>
+                        </div>
+                        <span class="commentaire"><span class="pseudo_commentaire">Lorem </span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span class="aficher_commentaire gris">Afficher les commentaires ...</span><br>
+                        <span class="commentaire"><span class="pseudo_commentaire">Lorem </span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <div class="heure">
+                            <span class="commentaire gris">Il y a 2 heures</span><br>
+                        </div>
+                    </div>
+                    <div class="action_commentaire row">
+                        <div class="commentaire_gauche row">
+                            <img src="photos/smile.png" alt="smile" class="smile">
+                            <p class="gris">Ecrire un commentaire ...</p>
                         </div>
                         <button class="publier">Publier</button>
                     </div>
@@ -87,25 +128,70 @@
             <section class="droite">
                 <div class="suggestion">
                     <div class="mon_compte">
-                        <div class="profil_compte">
+                        <div class="profil_compte row">
                             <div class="photo_compte"></div>
-                            <p class="nom_compte">Loem um</p><br>
-                            <p class="nom_compte g">Loem um</p>
+                            <div class="les_noms_comptes colone">
+                                <p class="nom_compte">Loem um</p>
+                                <p class="nom_compte gris">Loem um</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation_suggestion row">
+                        <p class="pour_vous gris">Suggestion pour vous</p>
+                        <p class="voir_tout">Voir tout</p>
+                    </div>
+                    <div class="les_abonnements row">
+                        <div class="gauche_abonnement row">
+                            <div class="photo_abonnement"></div>
+                            <div class="les_noms_abonnement">
+                                <p class="nom_abonnement">Lorem um</p>
+                                <p class="gris">Lorem um</p>
+                            </div>
                         </div>
                         <a href="#" class="abonne">+ S'abonner</a>
                     </div>
-                    <div class="presentation_suggestion">
-                        <p class="pour_vous">Suggestion pour vous</p>
-                        <p class="voir_tout">Voir tout</p>
+                    <div class="les_abonnements row">
+                        <div class="gauche_abonnement row">
+                            <div class="photo_abonnement"></div>
+                            <div class="les_noms_abonnement">
+                                <p class="nom_abonnement">Lorem um</p>
+                                <p class="gris">Lorem um</p>
+                            </div>
+                        </div>
+                        <a href="#" class="abonne">+ S'abonner</a>
                     </div>
-                    <div class="les_abonnement">
-                        <div class="photo_abonnement"></div>
-                        <p class="nom_abonnement">Lorem um</p>
-                        <p class="nom_abonnement g">Lorem um</p>
-
+                    <div class="les_abonnements row">
+                        <div class="gauche_abonnement row">
+                            <div class="photo_abonnement"></div>
+                            <div class="les_noms_abonnement">
+                                <p class="nom_abonnement">Lorem um</p>
+                                <p class="nom_abonnement indice">Lorem um</p>
+                            </div>
+                        </div>
+                        <a href="#" class="abonne">+ S'abonner</a>
+                    </div>
+                    <div class="les_abonnements row">
+                        <div class="gauche_abonnement row">
+                            <div class="photo_abonnement"></div>
+                            <div class="les_noms_abonnement">
+                                <p class="nom_abonnement">Lorem um</p>
+                                <p class="nom_abonnement indice">Lorem um</p>
+                            </div>
+                        </div>
+                        <a href="#" class="abonne">+ S'abonner</a>
+                    </div>
+                    <div class="les_abonnements row">
+                        <div class="gauche_abonnement row">
+                            <div class="photo_abonnement"></div>
+                            <div class="les_noms_abonnement">
+                                <p class="nom_abonnement">Lorem um</p>
+                                <p class="nom_abonnement indice">Lorem um</p>
+                            </div>
+                        </div>
+                        <a href="#" class="abonne">+ S'abonner</a>
                     </div>
                 </div>
-                <div class="a_propos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, iure!</div>
+                <div class="a_propos gris">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, iure!</div>
             </section>
         </div>
     </div>
