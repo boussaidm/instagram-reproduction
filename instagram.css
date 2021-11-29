@@ -57,7 +57,7 @@ body {
 .centre_nav {
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 64%;
 }
 
 .logo_instagram {
@@ -92,7 +92,7 @@ body {
 .generale {
     width: 70%;
     padding-bottom: 30px;
-    /*background-color: yellowgreen;*/
+    justify-content: center;
 }
 
 
