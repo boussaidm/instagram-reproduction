@@ -15,6 +15,7 @@
     --shadow: 0px 0px 2px 0px #646464;
     --font-pseudo: 'Open Sans', sans-serif;
     --font-entete: 'Roboto', sans-serif;
+    --border: 1px solid #dbdbdb;
 }
 
 
@@ -71,8 +72,14 @@ body {
 }
 
 .recherche {
-    padding: 3px;
-    margin-right: 112px;
+    padding: 7px;
+    border: var(--border);
+    padding-right: 84px;
+    background-image: url(photos/loupe.png);
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding-left: 25px;
 }
 
 .icones_liste {
@@ -101,13 +108,25 @@ body {
 .les_story {
     margin-top: 30px;
     background-color: var(--navbar-bg);
-    box-shadow: var(--shadow);
     min-width: 484px;
+    border: var(--border);
 }
 
 .story {
     margin: 17px 6px 13px 10px;
     align-items: center;
+}
+
+.story_border{
+    background: linear-gradient(210deg, #bd4ec7 35px,#f69d3c );
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.story_espace_border{
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #fff;
 }
 
 .profil_story {
@@ -127,7 +146,7 @@ body {
 
 .publication {
     margin-top: 32px;
-    box-shadow: var(--shadow);
+    border: var(--border);
 }
 
 
@@ -143,13 +162,33 @@ body {
     align-items: center;
 }
 
+.border_profil_entete{
+    margin: 6px 4px 6px 4px;
+}
+
 .profil_entete {
     border-radius: 50%;
     width: 40px;
     padding-bottom: 40px;
-    background-color: var(--insta-color);
-    margin: 6px 5px 6px 6px;
     font-family: var(--font-entete);
+}
+
+.photo_prof_un{
+    background-image: url(photos/photoProUn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_prof_deux{
+    background-image: url(photos/photoProDeux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_prof_trois {
+    background-image: url(photos/photoProTrois.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nom_profil_publication {
@@ -167,9 +206,19 @@ body {
 
 /*corps publication*/
 
-.photo_publication {
-    padding-top: 510px;
-    background-color: var(--insta-color);
+
+.publication_une{
+    background-image: url(photos/chevaux.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 298px;
+}
+
+.publication_deux {
+    padding-top: 298px;
+    background-image: url(photos/fille.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .identification {
@@ -224,7 +273,7 @@ body {
 .action_commentaire {
     justify-content: space-between;
     padding-bottom: 8px;
-    box-shadow: var(--shadow);
+    
 }
 
 .commentaire_gauche {
@@ -268,6 +317,9 @@ body {
     border-radius: 50%;
     margin-right: 15px;
     background-color: var(--insta-color);
+    background-image: url(photos/photoProfilPerso.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nom_compte {
@@ -300,6 +352,36 @@ body {
     border-radius: 50%;
     margin-right: 8px;
     background-color: var(--insta-color);
+}
+
+.profil_sug_un {
+    background-image: url(photos/photoSuggestionUn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profil_sug_deux {
+    background-image: url(photos/photoSuggestionDeux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profil_sug_trois {
+    background-image: url(photos/photoSuggestionTrois.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profil_sug_quatre {
+    background-image: url(photos/photoSuggestionQuatre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profil_sug_cinq {
+    background-image: url(photos/photoSuggestionCinq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nom_abonnement {
