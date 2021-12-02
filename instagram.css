@@ -72,14 +72,12 @@ body {
 }
 
 .recherche {
-    padding: 7px;
+    padding: 7px 84px 7px 25px;
     border: var(--border);
-    padding-right: 84px;
     background-image: url(photos/loupe.png);
-    background-position: left ;
+    background-position: 5px;
     background-repeat: no-repeat;
     background-size: 15px;
-    padding-left: 25px;
 }
 
 .icones_liste {
@@ -117,13 +115,13 @@ body {
     align-items: center;
 }
 
-.story_border{
-    background: linear-gradient(210deg, #bd4ec7 35px,#f69d3c );
+.story_border {
+    background: linear-gradient(210deg, #bd4ec7 35px, #f69d3c);
     border-radius: 50%;
     padding: 2px;
 }
 
-.story_espace_border{
+.story_espace_border {
     border-radius: 50%;
     padding: 2px;
     background-color: #fff;
@@ -162,7 +160,7 @@ body {
     align-items: center;
 }
 
-.border_profil_entete{
+.border_profil_entete {
     margin: 6px 4px 6px 4px;
 }
 
@@ -173,13 +171,13 @@ body {
     font-family: var(--font-entete);
 }
 
-.photo_prof_un{
+.photo_prof_un {
     background-image: url(photos/photoProUn.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.photo_prof_deux{
+.photo_prof_deux {
     background-image: url(photos/photoProDeux.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,8 +204,7 @@ body {
 
 /*corps publication*/
 
-
-.publication_une{
+.publication_une {
     background-image: url(photos/chevaux.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -273,7 +270,6 @@ body {
 .action_commentaire {
     justify-content: space-between;
     padding-bottom: 8px;
-    
 }
 
 .commentaire_gauche {
